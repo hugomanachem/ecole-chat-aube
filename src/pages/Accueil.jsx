@@ -1,7 +1,8 @@
 import Navbar from "../components/Navbar";
-import main_section_img from "../assets/home_main_img.png";
-import home_association_img from "../assets/home_association_img.png";
-import home_buts_img from "../assets/home_buts_img.png";
+import Footer from "../components/Footer";
+import main_section_img from "../assets/home/home_main_img.png";
+import home_association_img from "../assets/home/home_association_img.png";
+import home_buts_img from "../assets/home/home_buts_img.png";
 
 function Accueil() {
   return (
@@ -76,6 +77,8 @@ function Accueil() {
           <img src={home_buts_img} className="radius-left"></img>
         </div>
       </section>
+      
+      <Footer icons_color = {"yellow"}/>
     </>
   );
 }

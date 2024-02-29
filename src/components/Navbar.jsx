@@ -1,16 +1,17 @@
 import navbar_logo from "../assets/navbar_logo.png";
+import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar(props) {
   return (
-    <nav className="primary-bg-color navbar">
+    <nav className={`${props.bg_color}-bg-color navbar`}>
       <div className="navbar-content">
         <img src={navbar_logo}></img>
         <div className="navbar-links">
-          <a className="tertiary-color">Accueil</a>
-          <a className="tertiary-color">Faire un don</a>
-          <a className="tertiary-color">Devenir volontaire</a>
-          <a className="tertiary-color">Nos chats</a>
-          <a className="tertiary-color">Contact</a>
+          <Link to={"/"}>Accueil</Link>
+          <Link to={"/don"}>Faire un don</Link>
+          <a>Devenir volontaire</a>
+          <a>Nos chats</a>
+          <a>Contact</a>
         </div>
       </div>
     </nav>

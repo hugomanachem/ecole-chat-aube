@@ -8,7 +8,7 @@ function Accueil() {
   return (
     <>
       <section className="secondary-bg-color main-section">
-        <Navbar />
+        <Navbar bg_color="primary" />
         <div className="main-section-content">
           <div className="main-section-h1-btn">
             <h1 className="tertiary-color">L'école du chat de l'Aube</h1>
@@ -16,7 +16,7 @@ function Accueil() {
               En savoir plus
             </button>
           </div>
-          <img src={main_section_img}></img>
+          <img className="right-main-section-img" src={main_section_img}></img>
         </div>
       </section>
 

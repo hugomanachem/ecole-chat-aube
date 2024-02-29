@@ -21,64 +21,66 @@ function Accueil() {
       </section>
 
       <section className="primary-bg-color second-section">
-        <div className="second-section-content">
-          <img src={home_association_img} className="radius-right"></img>
-          <div className="second-section-h2-p">
-            <h2 className="tertiary-color">L'association</h2>
-            <div className="second-section-text">
-              <p>
-                Depuis 1999, l’École du Chat de l’Aube vient en aide aux chats
-                errants et abandonnés du département, et notamment autour du
-                secteur dit "Grand Troyes". Notre mission principale est la
-                stérilisation et l’identification des chats errants. Nous
-                prenons également en charge des chats adultes et des chatons
-                sauvés des rues et les proposons à l’adoption.
-              </p>
-              <p>
-                Nous disposons de trois locaux, mais devant le nombre important
-                de chats à sauver, cela reste insuffisant et certains de nos
-                protégés vivent en famille d’accueil. Nous avons besoin de
-                bénévoles pour nous aider : pour entretenir les locaux, soigner
-                les chats, organiser des manifestations ou des collectes, etc.
-              </p>
-            </div>
+        <div className="second-section-body righted">
+          <div className="text-second-section">
+            <h2>L'association</h2>
+
+            <p>
+              Depuis 1999, l’École du Chat de l’Aube vient en aide aux chats
+              errants et abandonnés du département, et notamment autour du
+              secteur dit "Grand Troyes". Notre mission principale est la
+              stérilisation et l’identification des chats errants. Nous prenons
+              également en charge des chats adultes et des chatons sauvés des
+              rues et les proposons à l’adoption.
+              <br />
+              Nous disposons de trois locaux, mais devant le nombre important de
+              chats à sauver, cela reste insuffisant et certains de nos protégés
+              vivent en famille d’accueil. Nous avons besoin de bénévoles pour
+              nous aider : pour entretenir les locaux, soigner les chats,
+              organiser des manifestations ou des collectes, etc.
+            </p>
           </div>
         </div>
+
+        <img
+          src={home_association_img}
+          className="left-img-second-section"
+        ></img>
       </section>
 
       <section className="secondary-bg-color second-section">
-        <div className="second-section-content">
-          <div className="second-section-h2-p">
-            <h2 className="tertiary-color">Nos buts</h2>
-            <div className="second-section-text">
-              <p>L'association poursuit les buts suivants :</p>
-              <ul>
-                <li>
-                  identification par tatouage ou puce électronique,
-                  stérilisation et vaccination des chats errants, nourrissage et
-                  soins de ces chats « libres »
-                </li>
-                <li>défendre ces chats et améliorer leur existence</li>
-                <li>
-                  proposer à l'adoption ces chats, testés, tatoués, stérilisés
-                  et vaccinés. 
-                </li>
-              </ul>
-              <p>
-                Par contre, notre refuge ne peut pas prendre en charge tous les
-                chats errants.
-              </p>
-              <p>
-                L'École du Chat de l'Aube a pour terrain d'action les communes
-                de l'agglomération troyenne et du département.
-              </p>
-            </div>
+        <div className="second-section-body lefted">
+          <div className="text-second-section">
+            <h2>Nos buts</h2>
+
+            <p>L'association poursuit les buts suivants : </p>
+            <ul>
+              <li>
+                identification par tatouage ou puce électronique, stérilisation
+                et vaccination des chats errants, nourrissage et soins de ces
+                chats « libres »
+              </li>
+              <li>défendre ces chats et améliorer leur existence</li>
+              <li>
+                proposer à l'adoption ces chats, testés, tatoués, stérilisés et
+                vaccinés. 
+              </li>
+            </ul>
+            <p>
+              Par contre, notre refuge ne peut pas prendre en charge tous les
+              chats errants. 
+            </p>
+            <p>
+              L'École du Chat de l'Aube a pour terrain d'action les communes de
+              l'agglomération troyenne et du département.
+            </p>
           </div>
-          <img src={home_buts_img} className="radius-left"></img>
         </div>
+
+        <img src={home_buts_img} className="right-img-second-section"></img>
       </section>
-      
-      <Footer icons_color = {"yellow"}/>
+
+      <Footer icons_color={"yellow"} />
     </>
   );
 }

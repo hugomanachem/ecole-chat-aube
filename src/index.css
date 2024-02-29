@@ -182,7 +182,8 @@ a {
 
 h1 {
   font-family: "Shrikhand";
-  font-size: 130px;
+  font-size: 100px;
+  line-height: 170px;
   font-weight: normal;
 }
 
@@ -213,6 +214,7 @@ button {
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
+  color: #503555;
 }
 
 #don-container {
@@ -236,35 +238,71 @@ button {
 }
 
 .second-section {
+  position: relative;
   width: 100%;
-  height: fit-content;
+  height: 830px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-}
-
-.second-section-content {
-  max-width: 1296px;
-  width: 95%;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
-.second-section-h2-p {
-  height: 100%;
-  max-width: 720px;
+.second-section-body {
+  max-width: 1166px;
+  width: 80%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+}
+
+.left-text-second-section {
+  align-items: start;
+}
+
+.righted {
+  justify-content: end;
+}
+
+.lefted {
+  justify-content: start;
+}
+
+.text-second-section {
+  width: 720px;
+}
+
+.text-second-section h2 {
+  margin-bottom: 25px;
+}
+
+.text-second-section p {
+  margin: 25px 0;
+}
+
+
+.right-img-second-section {
+  position: absolute;
+  right: 0;
+  top :180px;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 250px 0 0 250px;
+}
+
+.left-img-second-section {
+  position: absolute;
+  left: 0;
+  top :180px;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 0 250px 250px 0;
 }
 
 h2 {
   font-family: "Shrikhand";
   font-size: 64px;
+  line-height: 1.5em;
   font-weight: normal;
   text-transform: uppercase;
+  color: #503555;
 }
 
 section ul {
@@ -282,12 +320,8 @@ section li {
   text-align: justify;
 }
 
-.radius-right {
-  border-radius: 0 250px 250px 0;
-}
-
-.radius-left {
-  border-radius: 250px 0 0 250px;
+section li:nth-child(even) {
+  margin: 10px 0;
 }
 
 footer {

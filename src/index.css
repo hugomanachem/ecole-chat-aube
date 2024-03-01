@@ -340,7 +340,7 @@ section ul {
 }
 
 section p,
-section li {
+section li,label {
   font-family: "Anybody";
   font-size: 18px;
   line-height: 30px;
@@ -403,4 +403,43 @@ footer {
 
 #volontaire-devenir-volontaire-text p:nth-child(even) {
   font-weight: 700;
+}
+
+#form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+strong {
+  font-weight: 700;
+}
+
+#slot-selector {
+  width: 900px;
+  height: 492px;
+}
+
+p em {
+  font-size: 13px;
+  font-style: italic;
+  font-weight:600;
+}
+
+input {
+  width: 210px;
+  height: 38px;
+  background-color: #ffffff;
+  border-radius: 100px;
+  border: none;
+  padding-left:10px;
+}
+
+form {
+  margin-top: 25px;
+}
+
+form button {
+  margin-top: 50px;
+  margin-bottom: 25px;
 }

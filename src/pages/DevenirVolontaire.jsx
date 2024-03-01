@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import volontaire_main_img from "../assets/devenirVolontaire/volontaire_main_img.png";
 import volontaire_devenir_volontaire_img from "../assets/devenirVolontaire/volontaire_devenir_volontaire_img.png";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 function DevenirVolontaire() {
   return (
@@ -13,9 +14,12 @@ function DevenirVolontaire() {
             <h1 id="volontaire-main-title" className="tertiary-color">
               On vous attend
             </h1>
-            <button className="secondary-bg-color tertiary-color">
-              Devenir volontaire
-            </button>
+            <Link to={"/volontaire/selection_horaire"}>
+                <button className="secondary-bg-color tertiary-color">
+                    Devenir volontaire
+                </button>
+            </Link>
+            
           </div>
           <img
             className="right-main-section-img"
@@ -52,9 +56,12 @@ function DevenirVolontaire() {
                 pourrez venir sur le créneau séléctionné.
               </li>
             </ul>
-            <button className="primary-bg-color tertiary-color">
-              Devenir volontaire
-            </button>
+            <Link to={"/volontaire/selection_horaire"}>
+                <button className="primary-bg-color tertiary-color">
+                Devenir volontaire
+                </button>
+            </Link>
+            
           </div>
         </div>
 

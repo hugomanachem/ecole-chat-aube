@@ -7,13 +7,15 @@ import tara from "../assets/nosChats/tara.png";
 import pilou from "../assets/nosChats/pilou.png";
 import nala from "../assets/nosChats/nala.png";
 import sydney from "../assets/nosChats/sydney.png";
-import tyger from "../assets/nosChats/tyger.png";
+import tiger from "../assets/nosChats/tiger.png";
 import rio from "../assets/nosChats/rio.png";
 import lino from "../assets/nosChats/lino.png";
 import harvey from "../assets/nosChats/harvey.png";
 import saxo from "../assets/nosChats/saxo.png";
 import simba from "../assets/nosChats/simba.png";
 import melba from "../assets/nosChats/melba.png";
+import ChatItem from "../components/ChatItem";
+import ChatDetails from "../components/ChatDetails";
 
 function NosChats() {
   return (
@@ -37,62 +39,25 @@ function NosChats() {
 
       <section id="chats-grid-section" className="secondary-bg-color">
         <div id="chats-grid-body">
-          <div className="chats-grid-item">
-            <img src={sushimi} />
-            <h3>Sushimi</h3>
-          </div>
-          <div className="chats-grid-item">
-            <img src={melon} />
-            <h3>Melon</h3>
-          </div>
-          <div className="chats-grid-item">
-            <img src={tara} />
-            <h3>Tara</h3>
-          </div>
-          <div className="chats-grid-item">
-            <img src={pilou} />
-            <h3>Pilou</h3>
-          </div>
-          <div className="chats-grid-item">
-            <img src={nala} />
-            <h3>Nala</h3>
-          </div>
-          <div className="chats-grid-item">
-            <img src={sydney} />
-            <h3>Sydney</h3>
-          </div>
-          <div className="chats-grid-item">
-            <img src={tyger} />
-            <h3>Tyger</h3>
-          </div>
-          <div className="chats-grid-item">
-            <img src={rio} />
-            <h3>Rio</h3>
-          </div>
-          <div className="chats-grid-item">
-            <img src={lino} />
-            <h3>Lino</h3>
-          </div>
-          <div className="chats-grid-item">
-            <img src={harvey} />
-            <h3>Harvey</h3>
-          </div>
-          <div className="chats-grid-item">
-            <img src={saxo} />
-            <h3>Saxo</h3>
-          </div>
-          <div className="chats-grid-item">
-            <img src={simba} />
-            <h3>Simba</h3>
-          </div>
-          <div className="chats-grid-item">
-            <img src={melba} />
-            <h3>Melba</h3>
-          </div>
+            <ChatItem img_src={sushimi} chat_name="Sushimi"/>
+            <ChatItem img_src={melon} chat_name="Melon"/>
+            <ChatItem img_src={tara} chat_name="Tara"/>
+            <ChatItem img_src={pilou} chat_name="Pilou"/>
+            <ChatItem img_src={nala} chat_name="Nala"/>
+            <ChatItem img_src={sydney} chat_name="Sydney"/>
+            <ChatItem img_src={tiger} chat_name="Tiger"/>
+            <ChatItem img_src={rio} chat_name="Rio"/>
+            <ChatItem img_src={lino} chat_name="Lino"/>
+            <ChatItem img_src={harvey} chat_name="Harvey"/>
+            <ChatItem img_src={saxo} chat_name="Saxo"/>
+            <ChatItem img_src={simba} chat_name="Simba"/>
+            <ChatItem img_src={melba} chat_name="melba"/>
         </div>
+        <ChatDetails/>
       </section>
 
       <Footer bg_color="primary-bg-color" icons_color="yellow" />
+      
     </>
   );
 }

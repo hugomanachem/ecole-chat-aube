@@ -61,6 +61,19 @@ function FaireUnDon() {
           className="right-img-second-section"
         ></img>
       </section>
+
+      <section id="don-video-section" className="primary-bg-color">
+        <div id="don-video-body">
+            <h2>Comment faire un don ?</h2>
+            <p>On vous explique comment faire un don dans la vidéo juste en dessous :</p>
+            <div id="don-video-btn">
+                <iframe width="876" height="447" src="https://www.youtube.com/embed/iegTbDlr-ns" title="TUTO : COMMENT FAIRE UN DON ?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <button className="secondary-bg-color">Faire un don</button>
+            </div>
+
+        </div>
+
+      </section>
     </>
   );
 }

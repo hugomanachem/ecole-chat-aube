@@ -4,6 +4,7 @@ import paypal_logo from "../assets/faireUnDon/paypal_logo.png";
 import mastercard_logo from "../assets/faireUnDon/mastercard_logo.png";
 import visa_logo from "../assets/faireUnDon/visa_logo.png";
 import don_pourquoi_faire_un_don_img from "../assets/faireUnDon/don_pourquoi_faire_un_don_img.png";
+import Footer from "../components/Footer";
 
 
 function FaireUnDon() {
@@ -83,6 +84,8 @@ function FaireUnDon() {
           </div>
         </div>
       </section>
+
+      <Footer bg_color="secondary-bg-color" icons_color="white"/>
     </>
   );
 }

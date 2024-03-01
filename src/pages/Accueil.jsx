@@ -80,7 +80,7 @@ function Accueil() {
         <img src={home_buts_img} className="right-img-second-section"></img>
       </section>
 
-      <Footer icons_color={"yellow"} />
+      <Footer bg_color="primary-bg-color" icons_color="yellow" />
     </>
   );
 }

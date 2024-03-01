@@ -3,7 +3,7 @@ import footer_logo from '../assets/footer/footer_logo.png';
 function Footer (props) {
 
     return (
-        <footer className="primary-bg-color">
+        <footer className={props.bg_color}>
             <div className="footer-content">
                 <img src={footer_logo}/>
                 <div className="footer-links">

@@ -4,6 +4,7 @@ import FaireUnDon from "./pages/FaireUnDon";
 import DevenirVolontaire from "./pages/DevenirVolontaire";
 import SelectionHoraire from "./pages/SelectionHoraire";
 import NosChats from "./pages/NosChats";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           element={<SelectionHoraire />}
         />
         <Route path="/chats" element={<NosChats />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </>
   );

@@ -10,7 +10,7 @@ function Navbar(props) {
           <Link to={"/"}>Accueil</Link>
           <Link to={"/don"}>Faire un don</Link>
           <Link to={"/volontaire"}>Devenir volontaire</Link>
-          <a>Nos chats</a>
+          <Link to={"/chats"}>Nos chats</Link>
           <a>Contact</a>
         </div>
       </div>

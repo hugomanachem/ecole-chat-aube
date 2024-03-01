@@ -198,11 +198,11 @@ h1 {
 }
 
 .left-main-section-img {
-  margin-right : 80px;
+  margin-right : 50px;
 }
 
 .right-main-section-img {
-  margin-left : 80px;
+  margin-left : 50px;
 }
 
 button {
@@ -443,3 +443,8 @@ form button {
   margin-top: 50px;
   margin-bottom: 25px;
 }
+
+#border-radius-main-img {
+  border-radius: 25px;
+}
+

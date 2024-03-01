@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import chats_main_img from "../assets/nosChats/chats_main_img.png";
 import sushimi from "../assets/nosChats/sushimi.png";
 import melon from "../assets/nosChats/melon.png";
@@ -90,6 +91,8 @@ function NosChats() {
           </div>
         </div>
       </section>
+
+      <Footer bg_color="primary-bg-color" icons_color="yellow" />
     </>
   );
 }

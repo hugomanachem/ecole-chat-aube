@@ -9,7 +9,7 @@ function Navbar(props) {
         <div className="navbar-links">
           <Link to={"/"}>Accueil</Link>
           <Link to={"/don"}>Faire un don</Link>
-          <a>Devenir volontaire</a>
+          <Link to={"/volontaire"}>Devenir volontaire</Link>
           <a>Nos chats</a>
           <a>Contact</a>
         </div>

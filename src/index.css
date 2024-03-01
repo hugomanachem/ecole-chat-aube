@@ -388,3 +388,19 @@ footer {
 .footer-links-logo {
   margin-right: 10px;
 }
+
+#volontaire-main-title {
+  width: 400px;
+}
+
+#volontaire-devenir-volontaire-text,#volontaire-devenir-volontaire-h2 {
+  width: 750px;
+}
+
+#volontaire-devenir-volontaire-ul {
+  margin-bottom: 50px;
+}
+
+#volontaire-devenir-volontaire-text p:nth-child(even) {
+  font-weight: 700;
+}

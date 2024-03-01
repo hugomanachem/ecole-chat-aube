@@ -9,7 +9,7 @@ function ChatDetails() {
 
   return (
     <>
-      <section id="chat-details-container">
+      <section id="chat-details-container" className="visible">
         <img onClick={toggleChatDetails} id="close-icon" src={close_icon} />
         <div id="chat-details-body">
           <div id="chat-main-infos">

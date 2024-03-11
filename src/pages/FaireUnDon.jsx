@@ -6,7 +6,6 @@ import visa_logo from "../assets/faireUnDon/visa_logo.png";
 import don_pourquoi_faire_un_don_img from "../assets/faireUnDon/don_pourquoi_faire_un_don_img.png";
 import Footer from "../components/Footer";
 
-
 function FaireUnDon() {
   return (
     <>
@@ -15,7 +14,7 @@ function FaireUnDon() {
         <div className="main-section-content">
           <img className="left-main-section-img" src={don_main_img}></img>
           <div className="main-section-h1-btn">
-            <h1 className="tertiary-color">On compte sur vous</h1>
+            <h1>On compte sur vous</h1>
             <div id="don-container">
               <div id="don-btn-container">
                 <button className="secondary-bg-color tertiary-color">
@@ -85,7 +84,7 @@ function FaireUnDon() {
         </div>
       </section>
 
-      <Footer bg_color="secondary-bg-color" icons_color="white"/>
+      <Footer bg_color="secondary-bg-color" icons_color="white" />
     </>
   );
 }

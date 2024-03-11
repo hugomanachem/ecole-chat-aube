@@ -29,7 +29,7 @@ function NosChats() {
             src={chats_main_img}
           ></img>
           <div className="main-section-h1-btn">
-            <h1 className="tertiary-color">On vous présente nos chats</h1>
+            <h1>On vous présente nos chats</h1>
             <button className="secondary-bg-color tertiary-color">
               Découvrir nos chats
             </button>
@@ -39,25 +39,24 @@ function NosChats() {
 
       <section id="chats-grid-section" className="secondary-bg-color">
         <div id="chats-grid-body">
-            <ChatItem img_src={sushimi} chat_name="Sushimi"/>
-            <ChatItem img_src={melon} chat_name="Melon"/>
-            <ChatItem img_src={tara} chat_name="Tara"/>
-            <ChatItem img_src={pilou} chat_name="Pilou"/>
-            <ChatItem img_src={nala} chat_name="Nala"/>
-            <ChatItem img_src={sydney} chat_name="Sydney"/>
-            <ChatItem img_src={tiger} chat_name="Tiger"/>
-            <ChatItem img_src={rio} chat_name="Rio"/>
-            <ChatItem img_src={lino} chat_name="Lino"/>
-            <ChatItem img_src={harvey} chat_name="Harvey"/>
-            <ChatItem img_src={saxo} chat_name="Saxo"/>
-            <ChatItem img_src={simba} chat_name="Simba"/>
-            <ChatItem img_src={melba} chat_name="melba"/>
+          <ChatItem img_src={sushimi} chat_name="Sushimi" />
+          <ChatItem img_src={melon} chat_name="Melon" />
+          <ChatItem img_src={tara} chat_name="Tara" />
+          <ChatItem img_src={pilou} chat_name="Pilou" />
+          <ChatItem img_src={nala} chat_name="Nala" />
+          <ChatItem img_src={sydney} chat_name="Sydney" />
+          <ChatItem img_src={tiger} chat_name="Tiger" />
+          <ChatItem img_src={rio} chat_name="Rio" />
+          <ChatItem img_src={lino} chat_name="Lino" />
+          <ChatItem img_src={harvey} chat_name="Harvey" />
+          <ChatItem img_src={saxo} chat_name="Saxo" />
+          <ChatItem img_src={simba} chat_name="Simba" />
+          <ChatItem img_src={melba} chat_name="melba" />
         </div>
-        <ChatDetails/>
+        <ChatDetails />
       </section>
 
       <Footer bg_color="primary-bg-color" icons_color="yellow" />
-      
     </>
   );
 }

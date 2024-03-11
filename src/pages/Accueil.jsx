@@ -11,7 +11,7 @@ function Accueil() {
         <Navbar bg_color="primary" />
         <div className="main-section-content">
           <div className="main-section-h1-btn">
-            <h1 className="tertiary-color">L'école du chat de l'Aube</h1>
+            <h1>L'école du chat de l'Aube</h1>
             <button className="primary-bg-color tertiary-color">
               En savoir plus
             </button>

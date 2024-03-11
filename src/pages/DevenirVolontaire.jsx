@@ -11,15 +11,12 @@ function DevenirVolontaire() {
         <Navbar bg_color="secondary" />
         <div className="main-section-content">
           <div className="main-section-h1-btn">
-            <h1 id="volontaire-main-title" className="tertiary-color">
-              On vous attend
-            </h1>
+            <h1 id="volontaire-main-title">On vous attend</h1>
             <Link to={"/volontaire/selection_horaire"}>
-                <button className="secondary-bg-color tertiary-color">
-                    Devenir volontaire
-                </button>
+              <button className="secondary-bg-color tertiary-color">
+                Devenir volontaire
+              </button>
             </Link>
-            
           </div>
           <img
             className="right-main-section-img"
@@ -57,11 +54,10 @@ function DevenirVolontaire() {
               </li>
             </ul>
             <Link to={"/volontaire/selection_horaire"}>
-                <button className="primary-bg-color tertiary-color">
+              <button className="primary-bg-color tertiary-color">
                 Devenir volontaire
-                </button>
+              </button>
             </Link>
-            
           </div>
         </div>
 

@@ -30,6 +30,30 @@ function SelectionHoraire() {
     };
   });
 
+  const handleTimeslotClicked = (startTimeEventEmit) => {
+    startTimeEventEmit.resetDate();
+    startTimeEventEmit.resetSelectedTimeState();
+    setFormatedSelectedDate(startTimeEventEmit);
+  };
+
+  const setFormatedSelectedDate = (startTimeEventEmit) => {
+    const dateToFormat = startTimeEventEmit.startTime
+      .toLocaleString("fr-FR", {
+        dateStyle: "full",
+        timeStyle: "short",
+        timeZone: "UTC",
+      })
+      .split(" ");
+    const formatedStartTime = parseInt(dateToFormat[5].substring(0, 2)) + 1;
+    const formatedEndTime = formatedStartTime + 1;
+    const formatedSelectedDate = `${
+      dateToFormat[0].charAt(0).toUpperCase() + dateToFormat[0].slice(1)
+    } ${dateToFormat[1]} ${
+      dateToFormat[2]
+    } - ${formatedStartTime}h/${formatedEndTime}h`;
+    setSelectedDate(formatedSelectedDate);
+  };
+
   return (
     <>
       <section className="primary-bg-color main-section">
@@ -38,13 +62,13 @@ function SelectionHoraire() {
           <div className="main-section-text">
             <h2>Choisissez votre créneau</h2>
             <p>
-              1 Créneau séléctionné{" "}
+              {selectedDate == "" ? (
+                <>0 Créneau séléctionné</>
+              ) : (
+                <>1 Créneau séléctionné : </>
+              )}
               <strong>
-                {selectedDate == "" ? (
-                  <>- Jeudi 27 février - 10h/12h</>
-                ) : (
-                  <>selectedDate</>
-                )}
+                {selectedDate == "" ? <></> : <>{selectedDate}</>}
               </strong>
             </p>
             <form id="form-container">
@@ -70,9 +94,7 @@ function SelectionHoraire() {
                 required
               />
 
-              <button className="secondary-bg-color pointer-on-hover">
-                Valider ce créneau
-              </button>
+              <button className="secondary-bg-color">Valider ce créneau</button>
               <p>
                 <em>
                   Ce rendez-vous vous engage.
@@ -88,7 +110,7 @@ function SelectionHoraire() {
               primaryColor="#3f5b85"
               eventDurationInMinutes={60}
               availableTimeslots={availableTimeslots}
-              onStartTimeSelect={console.log}
+              onStartTimeSelect={handleTimeslotClicked}
             />
           </div>
         </div>

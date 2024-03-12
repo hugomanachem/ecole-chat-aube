@@ -3,7 +3,6 @@ import { useState } from "react";
 import { ScheduleMeeting } from "react-schedule-meeting";
 import Footer from "../components/Footer";
 
-
 function SelectionHoraire() {
   const [lastName, setLastName] = useState("");
   const [firstName, setFirstName] = useState("");
@@ -40,7 +39,13 @@ function SelectionHoraire() {
             <h2>Choisissez votre créneau</h2>
             <p>
               1 Créneau séléctionné{" "}
-              <strong>{selectedDate == "" ? <>- Jeudi 27 février - 10h/12h</> :  <>selectedDate</>}</strong>
+              <strong>
+                {selectedDate == "" ? (
+                  <>- Jeudi 27 février - 10h/12h</>
+                ) : (
+                  <>selectedDate</>
+                )}
+              </strong>
             </p>
             <form id="form-container">
               <label>Nom</label>
@@ -65,12 +70,16 @@ function SelectionHoraire() {
                 required
               />
 
-              <button className="secondary-bg-color">Valider ce créneau</button>
-              <p><em>
-                Ce rendez-vous vous engage.
-                <br /> Merci d’informer l’association au moins 2h avant en cas
-                de désistement
-                </em></p>
+              <button className="secondary-bg-color pointer-on-hover">
+                Valider ce créneau
+              </button>
+              <p>
+                <em>
+                  Ce rendez-vous vous engage.
+                  <br /> Merci d’informer l’association au moins 2h avant en cas
+                  de désistement
+                </em>
+              </p>
             </form>
           </div>
           <div id="slot-selector">

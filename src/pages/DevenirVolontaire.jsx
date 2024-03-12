@@ -13,7 +13,7 @@ function DevenirVolontaire() {
           <div className="main-section-h1-btn">
             <h1 id="volontaire-main-title">On vous attend</h1>
             <Link to={"/volontaire/selection_horaire"}>
-              <button className="secondary-bg-color tertiary-color">
+              <button className="secondary-bg-color tertiary-color pointer-on-hover">
                 Devenir volontaire
               </button>
             </Link>
@@ -54,7 +54,7 @@ function DevenirVolontaire() {
               </li>
             </ul>
             <Link to={"/volontaire/selection_horaire"}>
-              <button className="primary-bg-color tertiary-color">
+              <button className="primary-bg-color tertiary-color pointer-on-hover">
                 Devenir volontaire
               </button>
             </Link>

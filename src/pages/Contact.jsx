@@ -85,7 +85,9 @@ function Contact() {
               />
             </div>
 
-            <button className="secondary-bg-color">Envoyer</button>
+            <button className="secondary-bg-color pointer-on-hover">
+              Envoyer
+            </button>
           </form>
         </div>
       </section>

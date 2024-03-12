@@ -3,16 +3,26 @@ import Footer from "../components/Footer";
 import main_section_img from "../assets/home/home_main_img.png";
 import home_association_img from "../assets/home/home_association_img.png";
 import home_buts_img from "../assets/home/home_buts_img.png";
+import React from "react";
 
 function Accueil() {
+  let enSavoirPlusRef = React.useRef();
+  function scrollTo(ref) {
+    if (!ref.current) return;
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  }
+
   return (
     <>
       <section className="secondary-bg-color main-section">
         <Navbar bg_color="primary" />
         <div className="main-section-content">
-          <div className="main-section-h1-btn">
+          <div
+            onClick={() => scrollTo(enSavoirPlusRef)}
+            className="main-section-h1-btn "
+          >
             <h1>L'école du chat de l'Aube</h1>
-            <button className="primary-bg-color tertiary-color">
+            <button className="primary-bg-color tertiary-color pointer-on-hover">
               En savoir plus
             </button>
           </div>
@@ -20,7 +30,10 @@ function Accueil() {
         </div>
       </section>
 
-      <section className="primary-bg-color second-section">
+      <section
+        ref={enSavoirPlusRef}
+        className="primary-bg-color second-section"
+      >
         <div className="second-section-body righted">
           <div className="text-second-section">
             <h2>L'association</h2>

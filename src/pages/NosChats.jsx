@@ -16,8 +16,14 @@ import simba from "../assets/nosChats/simba.png";
 import melba from "../assets/nosChats/melba.png";
 import ChatItem from "../components/ChatItem";
 import ChatDetails from "../components/ChatDetails";
+import React from "react";
 
 function NosChats() {
+  let decouvrirChatsRef = React.useRef();
+  function scrollTo(ref) {
+    if (!ref.current) return;
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  }
   return (
     <>
       <section className="primary-bg-color main-section">
@@ -30,14 +36,21 @@ function NosChats() {
           ></img>
           <div className="main-section-h1-btn">
             <h1>On vous présente nos chats</h1>
-            <button className="secondary-bg-color tertiary-color">
+            <button
+              className="secondary-bg-color tertiary-color pointer-on-hover"
+              onClick={() => scrollTo(decouvrirChatsRef)}
+            >
               Découvrir nos chats
             </button>
           </div>
         </div>
       </section>
 
-      <section id="chats-grid-section" className="secondary-bg-color">
+      <section
+        ref={decouvrirChatsRef}
+        id="chats-grid-section"
+        className="secondary-bg-color"
+      >
         <div id="chats-grid-body">
           <ChatItem img_src={sushimi} chat_name="Sushimi" />
           <ChatItem img_src={melon} chat_name="Melon" />

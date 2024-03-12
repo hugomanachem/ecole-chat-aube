@@ -370,10 +370,18 @@ footer {
 
 .footer-links {
   max-width: 900px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 50px 50px;
-  row-gap: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links-left,
+.footer-links-right {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
 }
 
 .footer-links a,

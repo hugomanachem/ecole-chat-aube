@@ -2,7 +2,6 @@ function ChatItem(props) {
   function openChatDetails() {
     let chatDetailsElm = document.getElementById("chat-details-container");
     chatDetailsElm.classList.remove("visible");
-    console.log("classe visible retiré!");
   }
   return (
     <div

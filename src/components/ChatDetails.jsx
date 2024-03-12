@@ -5,7 +5,6 @@ function ChatDetails() {
   function closeChatDetails() {
     let chatDetailsElm = document.getElementById("chat-details-container");
     chatDetailsElm.classList.add("visible");
-    console.log("classe visible ajouté!");
   }
 
   return (

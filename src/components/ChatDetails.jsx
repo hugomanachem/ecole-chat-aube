@@ -1,7 +1,7 @@
 import sushimi from "../assets/nosChats/sushimi.png";
 import close_icon from "../assets/close_icon.png";
 
-function ChatDetails() {
+function ChatDetails(props) {
   function closeChatDetails() {
     let chatDetailsElm = document.getElementById("chat-details-container");
     chatDetailsElm.classList.add("visible");
@@ -18,8 +18,8 @@ function ChatDetails() {
         />
         <div id="chat-details-body">
           <div id="chat-main-infos">
-            <h3>Sushimi</h3>
-            <img src={sushimi} />
+            <h3>{props.chat_name}</h3>
+            <img src={props.img_src} />
           </div>
           <div id="chat-detailed-infos">
             <p>

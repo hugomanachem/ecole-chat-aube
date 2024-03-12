@@ -1,5 +1,7 @@
 function ChatItem(props) {
   function openChatDetails() {
+    props.callbackToSetCDImgSrc(props.img_src);
+    props.callbackToSetCDName(props.chat_name);
     let chatDetailsElm = document.getElementById("chat-details-container");
     chatDetailsElm.classList.remove("visible");
   }

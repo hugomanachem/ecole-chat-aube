@@ -16,7 +16,7 @@ import simba from "../assets/nosChats/simba.png";
 import melba from "../assets/nosChats/melba.png";
 import ChatItem from "../components/ChatItem";
 import ChatDetails from "../components/ChatDetails";
-import React from "react";
+import React, { useState } from "react";
 
 function NosChats() {
   let decouvrirChatsRef = React.useRef();
@@ -24,6 +24,10 @@ function NosChats() {
     if (!ref.current) return;
     ref.current.scrollIntoView({ behavior: "smooth" });
   }
+
+  const [chatDetailsImgSrc, setChatDetailsImgSrc] = useState("");
+  const [chatDetailsName, setChatDetailsName] = useState("");
+
   return (
     <>
       <section className="primary-bg-color main-section">
@@ -52,21 +56,86 @@ function NosChats() {
         className="secondary-bg-color"
       >
         <div id="chats-grid-body">
-          <ChatItem img_src={sushimi} chat_name="Sushimi" />
-          <ChatItem img_src={melon} chat_name="Melon" />
-          <ChatItem img_src={tara} chat_name="Tara" />
-          <ChatItem img_src={pilou} chat_name="Pilou" />
-          <ChatItem img_src={nala} chat_name="Nala" />
-          <ChatItem img_src={sydney} chat_name="Sydney" />
-          <ChatItem img_src={tiger} chat_name="Tiger" />
-          <ChatItem img_src={rio} chat_name="Rio" />
-          <ChatItem img_src={lino} chat_name="Lino" />
-          <ChatItem img_src={harvey} chat_name="Harvey" />
-          <ChatItem img_src={saxo} chat_name="Saxo" />
-          <ChatItem img_src={simba} chat_name="Simba" />
-          <ChatItem img_src={melba} chat_name="melba" />
+          <ChatItem
+            img_src={sushimi}
+            chat_name="Sushimi"
+            callbackToSetCDImgSrc={setChatDetailsImgSrc}
+            callbackToSetCDName={setChatDetailsName}
+          />
+          <ChatItem
+            img_src={melon}
+            chat_name="Melon"
+            callbackToSetCDImgSrc={setChatDetailsImgSrc}
+            callbackToSetCDName={setChatDetailsName}
+          />
+          <ChatItem
+            img_src={tara}
+            chat_name="Tara"
+            callbackToSetCDImgSrc={setChatDetailsImgSrc}
+            callbackToSetCDName={setChatDetailsName}
+          />
+          <ChatItem
+            img_src={pilou}
+            chat_name="Pilou"
+            callbackToSetCDImgSrc={setChatDetailsImgSrc}
+            callbackToSetCDName={setChatDetailsName}
+          />
+          <ChatItem
+            img_src={nala}
+            chat_name="Nala"
+            callbackToSetCDImgSrc={setChatDetailsImgSrc}
+            callbackToSetCDName={setChatDetailsName}
+          />
+          <ChatItem
+            img_src={sydney}
+            chat_name="Sydney"
+            callbackToSetCDImgSrc={setChatDetailsImgSrc}
+            callbackToSetCDName={setChatDetailsName}
+          />
+          <ChatItem
+            img_src={tiger}
+            chat_name="Tiger"
+            callbackToSetCDImgSrc={setChatDetailsImgSrc}
+            callbackToSetCDName={setChatDetailsName}
+          />
+          <ChatItem
+            img_src={rio}
+            chat_name="Rio"
+            callbackToSetCDImgSrc={setChatDetailsImgSrc}
+            callbackToSetCDName={setChatDetailsName}
+          />
+          <ChatItem
+            img_src={lino}
+            chat_name="Lino"
+            callbackToSetCDImgSrc={setChatDetailsImgSrc}
+            callbackToSetCDName={setChatDetailsName}
+          />
+          <ChatItem
+            img_src={harvey}
+            chat_name="Harvey"
+            callbackToSetCDImgSrc={setChatDetailsImgSrc}
+            callbackToSetCDName={setChatDetailsName}
+          />
+          <ChatItem
+            img_src={saxo}
+            chat_name="Saxo"
+            callbackToSetCDImgSrc={setChatDetailsImgSrc}
+            callbackToSetCDName={setChatDetailsName}
+          />
+          <ChatItem
+            img_src={simba}
+            chat_name="Simba"
+            callbackToSetCDImgSrc={setChatDetailsImgSrc}
+            callbackToSetCDName={setChatDetailsName}
+          />
+          <ChatItem
+            img_src={melba}
+            chat_name="melba"
+            callbackToSetCDImgSrc={setChatDetailsImgSrc}
+            callbackToSetCDName={setChatDetailsName}
+          />
         </div>
-        <ChatDetails />
+        <ChatDetails img_src={chatDetailsImgSrc} chat_name={chatDetailsName} />
       </section>
 
       <Footer bg_color="primary-bg-color" icons_color="yellow" />

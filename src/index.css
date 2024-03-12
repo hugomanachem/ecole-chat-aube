@@ -149,7 +149,6 @@ a {
   max-width: 1296px;
   width: 95%;
   height: 100px;
-  margin-top: 40px;
   border-radius: 50px;
   display: flex;
   justify-content: center;
@@ -168,7 +167,7 @@ a {
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
-  color :#503555;
+  color: #503555;
   margin-left: 50px;
 }
 
@@ -178,6 +177,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 40px;
 }
 
 h1 {
@@ -185,6 +185,7 @@ h1 {
   font-size: 100px;
   line-height: 170px;
   font-weight: normal;
+  color: #503555;
 }
 
 .main-section-content {
@@ -198,11 +199,11 @@ h1 {
 }
 
 .left-main-section-img {
-  margin-right : 50px;
+  margin-right: 50px;
 }
 
 .right-main-section-img {
-  margin-left : 50px;
+  margin-left: 50px;
 }
 
 button {
@@ -221,7 +222,6 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 #don-container img {
@@ -234,7 +234,6 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .second-section {
@@ -270,7 +269,7 @@ button {
 }
 
 #don-video-btn {
-  margin-top : 50px;
+  margin-top: 50px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -298,7 +297,7 @@ button {
 }
 
 .text-second-section h2 {
-  width : 550px;
+  width: 550px;
   margin-bottom: 25px;
 }
 
@@ -306,11 +305,10 @@ button {
   margin: 25px 0;
 }
 
-
 .right-img-second-section {
   position: absolute;
   right: 0;
-  top :180px;
+  top: 180px;
   width: fit-content;
   height: fit-content;
   border-radius: 250px 0 0 250px;
@@ -319,7 +317,7 @@ button {
 .left-img-second-section {
   position: absolute;
   left: 0;
-  top :180px;
+  top: 180px;
   width: fit-content;
   height: fit-content;
   border-radius: 0 250px 250px 0;
@@ -340,7 +338,8 @@ section ul {
 }
 
 section p,
-section li,label {
+section li,
+label {
   font-family: "Anybody";
   font-size: 18px;
   line-height: 30px;
@@ -354,7 +353,7 @@ section li:nth-child(even) {
 }
 
 footer {
-  width : 100%;
+  width: 100%;
   height: 182px;
   display: flex;
   justify-content: center;
@@ -377,7 +376,8 @@ footer {
   row-gap: 20px;
 }
 
-.footer-links a {
+.footer-links a,
+#contact-grid-container a {
   font-family: "Anybody";
   font-size: 18px;
   font-weight: normal;
@@ -393,7 +393,8 @@ footer {
   width: 400px;
 }
 
-#volontaire-devenir-volontaire-text,#volontaire-devenir-volontaire-h2 {
+#volontaire-devenir-volontaire-text,
+#volontaire-devenir-volontaire-h2 {
   width: 750px;
 }
 
@@ -409,6 +410,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: start;
+  margin-top: 25px;
 }
 
 strong {
@@ -423,7 +425,7 @@ strong {
 p em {
   font-size: 13px;
   font-style: italic;
-  font-weight:600;
+  font-weight: 600;
 }
 
 input {
@@ -432,14 +434,10 @@ input {
   background-color: #ffffff;
   border-radius: 100px;
   border: none;
-  padding-left:10px;
+  padding-left: 10px;
 }
 
-form {
-  margin-top: 25px;
-}
-
-form button {
+#form-container button {
   margin-top: 50px;
   margin-bottom: 25px;
 }
@@ -450,7 +448,7 @@ form button {
 
 #chats-grid-section {
   position: relative;
-  width : 100%;
+  width: 100%;
   height: 1600px;
   display: flex;
   justify-content: center;
@@ -466,7 +464,7 @@ form button {
 .chats-grid-item img {
   border-radius: 30px;
   border: 5px solid #503555;
-  margin-bottom: 20px ;
+  margin-bottom: 20px;
 }
 
 h4 {
@@ -475,6 +473,10 @@ h4 {
   font-weight: normal;
   text-transform: uppercase;
   color: #503555;
+}
+
+#no-text-transform {
+  text-transform: none;
 }
 
 #chats-grid-body {
@@ -493,7 +495,7 @@ h4 {
   left: 10%;
   width: 1061px;
   height: 606px;
-  background-color:#faf1e7;
+  background-color: #faf1e7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -509,7 +511,7 @@ h4 {
 #chat-main-infos img {
   width: 364px;
   height: 364px;
-  margin-top : 30px;
+  margin-top: 30px;
   border-radius: 30px;
 }
 
@@ -535,4 +537,70 @@ h3 {
 
 .visible {
   visibility: hidden;
+}
+
+#contact-section {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+#contact-grid-container {
+  max-width: 1166px;
+  width: 80%;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 500px 500px;
+  row-gap: 20px;
+  column-gap: 100px;
+  margin-bottom: 100px;
+}
+
+#contact-main-title {
+  max-width: 1166px;
+  width: 80%;
+  text-align: center;
+}
+
+#contact-grid-container #contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+#contact-grid-container iframe,
+#contact-grid-container form {
+  margin-top: 50px;
+}
+
+#contact-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form div input,
+#contact-form div textarea {
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #d3bcd7;
+}
+
+#contact-form div input {
+  height: 48px;
+}
+
+#contact-form div textarea {
+  height: 132px;
+}
+
+#contact-form div input::placeholder,
+#contact-form div textarea::placeholder {
+  font-family: "Anybody";
+  font-size: 14px;
+  font-weight: normal;
+  color: #d3bcd7;
 }

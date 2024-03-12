@@ -1,11 +1,12 @@
 function ChatItem(props) {
-  function toggleChatDetails() {
+  function openChatDetails() {
     let chatDetailsElm = document.getElementById("chat-details-container");
-    chatDetailsElm.classList.toggle("visible");
+    chatDetailsElm.classList.remove("visible");
+    console.log("classe visible retiré!");
   }
   return (
     <div
-      onClick={toggleChatDetails}
+      onClick={() => openChatDetails()}
       className="chats-grid-item pointer-on-hover"
     >
       <img src={props.img_src} />

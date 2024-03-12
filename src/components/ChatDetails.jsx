@@ -2,16 +2,17 @@ import sushimi from "../assets/nosChats/sushimi.png";
 import close_icon from "../assets/close_icon.png";
 
 function ChatDetails() {
-  function toggleChatDetails() {
+  function closeChatDetails() {
     let chatDetailsElm = document.getElementById("chat-details-container");
-    chatDetailsElm.classList.toggle("visible");
+    chatDetailsElm.classList.add("visible");
+    console.log("classe visible ajouté!");
   }
 
   return (
     <>
       <section id="chat-details-container" className="visible">
         <img
-          onClick={toggleChatDetails}
+          onClick={() => closeChatDetails()}
           id="close-icon"
           src={close_icon}
           className="pointer-on-hover"

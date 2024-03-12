@@ -1,4 +1,3 @@
-import sushimi from "../assets/nosChats/sushimi.png";
 import close_icon from "../assets/close_icon.png";
 
 function ChatDetails(props) {

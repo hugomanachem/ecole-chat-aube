@@ -96,7 +96,28 @@ function SelectionHoraire() {
                 required
               />
 
-              <button className="secondary-bg-color">Valider ce créneau</button>
+              <button
+                type="button"
+                className="secondary-bg-color pointer-on-hover"
+                onClick={(e) => {
+                  if (selectedDate === "") {
+                    e.preventDefault();
+                    alert("Veuillez choisir un créneau!");
+                  } else if (lastName === "" || firstName === "") {
+                    e.preventDefault();
+                    alert("Veuillez remplir votre nom et prénom");
+                  } else {
+                    alert(
+                      `${firstName} ${lastName}, votre créneau ${selectedDate} est confirmé!`
+                    );
+                    setFirstName("");
+                    setLastName("");
+                    setSelectedDate("");
+                  }
+                }}
+              >
+                Valider ce créneau
+              </button>
               <p>
                 <em>
                   Ce rendez-vous vous engage.

@@ -85,7 +85,25 @@ function Contact() {
               />
             </div>
 
-            <button className="secondary-bg-color pointer-on-hover">
+            <button
+              className="secondary-bg-color pointer-on-hover"
+              type="button"
+              onClick={(e) => {
+                if (lastName === "" || firstName === "" || message === "") {
+                  e.preventDefault();
+                  alert(
+                    "Veuillez remplir votre prénom, nom et laisser un message"
+                  );
+                } else {
+                  alert(
+                    `${firstName} ${lastName}, votre message a bien été envoyé`
+                  );
+                  setFirstName("");
+                  setLastName("");
+                  setMessage("");
+                }
+              }}
+            >
               Envoyer
             </button>
           </form>

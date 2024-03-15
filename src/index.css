@@ -606,7 +606,8 @@ h3 {
 }
 
 #contact-form div input::placeholder,
-#contact-form div textarea::placeholder {
+#contact-form div textarea::placeholder,
+#form-container input::placeholder {
   font-family: "Anybody";
   font-size: 14px;
   font-weight: normal;
@@ -614,7 +615,8 @@ h3 {
 }
 
 #contact-form div input,
-#contact-form div textarea {
+#contact-form div textarea,
+#form-container input {
   font-family: "Anybody";
   font-size: 14px;
   font-weight: normal;
@@ -623,6 +625,10 @@ h3 {
 #contact-form div textarea {
   padding-top: 10px;
   padding-left: 8px;
+}
+
+#form-container :nth-child(3) {
+  margin-top: 20px;
 }
 
 .pointer-on-hover:hover {

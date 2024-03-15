@@ -80,6 +80,7 @@ function SelectionHoraire() {
                 onChange={(e) => {
                   setLastName(e.target.value);
                 }}
+                placeholder="Votre nom (obligatoire)"
                 required
               />
 
@@ -91,6 +92,7 @@ function SelectionHoraire() {
                 onChange={(e) => {
                   setFirstName(e.target.value);
                 }}
+                placeholder="Votre prénom (obligatoire)"
                 required
               />
 

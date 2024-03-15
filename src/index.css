@@ -612,6 +612,19 @@ h3 {
   font-weight: normal;
   color: #d3bcd7;
 }
+
+#contact-form div input,
+#contact-form div textarea {
+  font-family: "Anybody";
+  font-size: 14px;
+  font-weight: normal;
+}
+
+#contact-form div textarea {
+  padding-top: 10px;
+  padding-left: 8px;
+}
+
 .pointer-on-hover:hover {
   cursor: pointer;
 }

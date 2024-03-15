@@ -499,8 +499,7 @@ h4 {
 
 #chat-details-container {
   position: fixed;
-  top: 10%;
-  left: 10%;
+  top: calc(calc(100% - 606px) / 2);
   width: 1061px;
   height: 606px;
   background-color: #faf1e7;

@@ -16,7 +16,7 @@ function Footer(props) {
         {props.bg_color && props.bg_color == "primary-bg-color" ? (
           <div className="footer-links">
             <div className="footer-links-left">
-              <a className="tertiary-color pointer-on-hover">
+              <a className="tertiary-color">
                 <img className="footer-links-logo" src={facebook_logo_yellow} />
                 Notre Facebook
               </a>
@@ -30,7 +30,7 @@ function Footer(props) {
                 <img className="footer-links-logo" src={home_logo_yellow} />
                 B.P. 80 176 - 10605 La Chapelle Saint Luc Cedex
               </a>
-              <a className="tertiary-color pointer-on-hover">
+              <a className="tertiary-color">
                 <img className="footer-links-logo" src={email_logo_yellow} />
                 contact@ecoleduchatdelaube.com
               </a>
@@ -39,7 +39,7 @@ function Footer(props) {
         ) : (
           <div className="footer-links">
             <div className="footer-links-left">
-              <a className="tertiary-color pointer-on-hover">
+              <a className="tertiary-color">
                 <img className="footer-links-logo" src={facebook_logo_white} />
                 Notre Facebook
               </a>
@@ -53,7 +53,7 @@ function Footer(props) {
                 <img className="footer-links-logo" src={home_logo_white} />
                 B.P. 80 176 - 10605 La Chapelle Saint Luc Cedex
               </a>
-              <a className="tertiary-color pointer-on-hover">
+              <a className="tertiary-color">
                 <img className="footer-links-logo" src={email_logo_white} />
                 contact@ecoleduchatdelaube.com
               </a>

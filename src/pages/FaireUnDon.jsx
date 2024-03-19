@@ -22,9 +22,11 @@ function FaireUnDon() {
                 </button>
                 <p>Paiement sécurisé</p>
               </div>
-              <img src={paypal_logo}></img>
-              <img src={visa_logo}></img>
-              <img src={mastercard_logo}></img>
+              <div>
+                <img src={paypal_logo}></img>
+                <img src={visa_logo}></img>
+                <img src={mastercard_logo}></img>
+              </div>
             </div>
           </div>
         </div>

@@ -198,6 +198,10 @@ h1 {
   align-items: center;
 }
 
+.main-section-content img {
+  width: 50%;
+}
+
 .left-main-section-img {
   margin-right: 50px;
 }
@@ -222,6 +226,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 #don-container img {
@@ -632,4 +637,50 @@ h3 {
 
 .pointer-on-hover:hover {
   cursor: pointer;
+}
+
+@media screen and (max-width: 1287px) {
+  .main-section-h1-btn h1 {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .main-section-content {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .main-section-h1-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .main-section-h1-btn h1,
+  .main-section-h1-btn #volontaire-main-title {
+    text-align: center;
+    width: 100%;
+  }
+
+  .left-main-section-img,
+  .right-main-section-img {
+    margin: 25px 0 0 0;
+  }
+
+  .main-section-content img {
+    width: 80%;
+  }
+
+  .main-section-content .left-main-section-img {
+    order: 2;
+  }
+
+  #don-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

@@ -282,6 +282,7 @@ button {
 }
 
 #don-video-btn iframe {
+  width: 80%;
   margin-bottom: 50px;
 }
 
@@ -646,13 +647,15 @@ h3 {
     font-size: 80px;
   }
 
-  .text-second-section h2 {
+  .text-second-section h2,
+  #don-video-body h2 {
     font-size: 51.2px;
   }
 
   .text-second-section p,
   .text-second-section li,
-  .footer-links a {
+  .footer-links a,
+  #don-video-body p {
     font-size: 14.4px;
   }
 
@@ -772,5 +775,14 @@ h3 {
   .footer-links-left,
   .footer-links-right {
     justify-content: space-around;
+  }
+
+  #don-video-section {
+    height: fit-content;
+    padding: 50px 0;
+  }
+
+  #don-video-body h2 {
+    text-align: center;
   }
 }

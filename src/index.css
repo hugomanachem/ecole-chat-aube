@@ -797,4 +797,12 @@ h3 {
     width: 80%;
     height: fit-content;
   }
+
+  #mobile-long-h2 {
+    font-size: 40px;
+  }
+
+  #mobile-long-h1 {
+    font-size: 70px;
+  }
 }

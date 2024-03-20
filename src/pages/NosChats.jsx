@@ -39,7 +39,7 @@ function NosChats() {
             src={chats_main_img}
           ></img>
           <div className="main-section-h1-btn">
-            <h1>On vous présente nos chats</h1>
+            <h1 id="mobile-long-h1">On vous présente nos chats</h1>
             <button
               className="secondary-bg-color tertiary-color pointer-on-hover"
               onClick={() => scrollTo(decouvrirChatsRef)}

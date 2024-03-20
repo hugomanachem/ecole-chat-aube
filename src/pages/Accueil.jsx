@@ -36,7 +36,7 @@ function Accueil() {
       >
         <div className="second-section-body righted">
           <div className="text-second-section">
-            <h2>L'association</h2>
+            <h2 id="mobile-long-h2">L'association</h2>
 
             <p>
               Depuis 1999, l’École du Chat de l’Aube vient en aide aux chats

@@ -648,14 +648,17 @@ h3 {
   }
 
   .text-second-section h2,
-  #don-video-body h2 {
+  #don-video-body h2,
+  .main-section-text h2 {
     font-size: 51.2px;
   }
 
   .text-second-section p,
   .text-second-section li,
   .footer-links a,
-  #don-video-body p {
+  #don-video-body p,
+  .main-section-text p,
+  .main-section-text label {
     font-size: 14.4px;
   }
 
@@ -788,5 +791,10 @@ h3 {
 
   #don-video-body h2 {
     text-align: center;
+  }
+
+  #slot-selector {
+    width: 80%;
+    height: fit-content;
   }
 }

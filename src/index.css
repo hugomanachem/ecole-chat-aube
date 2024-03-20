@@ -298,7 +298,8 @@ button {
 }
 
 .text-second-section {
-  width: 720px;
+  max-width: 720px;
+  width: 65%;
 }
 
 .text-second-section h2 {
@@ -311,20 +312,22 @@ button {
 }
 
 .right-img-second-section {
+  width: 36%;
+  max-width: 530px;
+  height: fit-content;
   position: absolute;
   right: 0;
   top: 180px;
-  width: fit-content;
-  height: fit-content;
   border-radius: 250px 0 0 250px;
 }
 
 .left-img-second-section {
+  width: 36%;
+  max-width: 530px;
+  height: fit-content;
   position: absolute;
   left: 0;
   top: 180px;
-  width: fit-content;
-  height: fit-content;
   border-radius: 0 250px 250px 0;
 }
 
@@ -406,8 +409,7 @@ footer {
   width: 400px;
 }
 
-#volontaire-devenir-volontaire-text,
-#volontaire-devenir-volontaire-h2 {
+.second-section .volontaire-devenir-volontaire-h2 {
   width: 750px;
 }
 
@@ -415,7 +417,7 @@ footer {
   margin-bottom: 50px;
 }
 
-#volontaire-devenir-volontaire-text p:nth-child(even) {
+.volontaire-devenir-volontaire-text p:nth-child(even) {
   font-weight: 700;
 }
 
@@ -643,6 +645,15 @@ h3 {
   .main-section-h1-btn h1 {
     font-size: 80px;
   }
+
+  .text-second-section h2 {
+    font-size: 51.2px;
+  }
+
+  .text-second-section p,
+  .text-second-section li {
+    font-size: 14.4px;
+  }
 }
 
 @media screen and (max-width: 1060px) {
@@ -667,11 +678,12 @@ h3 {
 
   .left-main-section-img,
   .right-main-section-img {
-    margin: 25px 0 0 0;
+    max-width: 601px;
+    margin: 50px 0 0 0;
   }
 
   .main-section-content img {
-    width: 80%;
+    width: 75%;
   }
 
   .main-section-content .left-main-section-img {
@@ -682,5 +694,52 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  #don-btn-container {
+    height: 225px;
+    justify-content: space-evenly;
+  }
+
+  .second-section {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding: 50px 0;
+  }
+
+  .second-section > .second-section-body {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .second-section > .second-section-body > .text-second-section {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .second-section > .second-section-body > .text-second-section p {
+    align-self: self-start;
+  }
+
+  .second-section > .second-section-body > .text-second-section button {
+    margin-bottom: 50px;
+  }
+
+  .second-section > .second-section-body > .text-second-section h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .second-section img {
+    width: 60%;
+    border-radius: 50px;
+  }
+
+  .left-img-second-section,
+  .right-img-second-section {
+    position: static;
   }
 }

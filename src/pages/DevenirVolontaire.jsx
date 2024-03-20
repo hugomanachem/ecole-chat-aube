@@ -27,11 +27,10 @@ function DevenirVolontaire() {
 
       <section className="secondary-bg-color second-section">
         <div className="second-section-body righted">
-          <div
-            id="volontaire-devenir-volontaire-text"
-            className="text-second-section"
-          >
-            <h2 id="volontaire-devenir-volontaire-h2">Devenir volontaire</h2>
+          <div className=" volontaire-devenir-volontaire-text text-second-section">
+            <h2 className="volontaire-devenir-volontaire-h2">
+              Devenir volontaire
+            </h2>
             <p>
               Être volontaire à L’école du chat de l’Aube, ça consiste en quoi ?
             </p>

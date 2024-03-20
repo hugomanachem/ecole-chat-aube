@@ -763,6 +763,10 @@ h3 {
     flex-direction: column-reverse;
   }
 
+  .footer-content > img {
+    width: 100px;
+  }
+
   .footer-links {
     flex-direction: column;
     align-items: center;

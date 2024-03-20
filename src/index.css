@@ -651,8 +651,17 @@ h3 {
   }
 
   .text-second-section p,
-  .text-second-section li {
+  .text-second-section li,
+  .footer-links a {
     font-size: 14.4px;
+  }
+
+  .footer-links-logo {
+    width: 40px;
+  }
+
+  .footer-links {
+    justify-content: space-evenly;
   }
 }
 
@@ -741,5 +750,27 @@ h3 {
   .left-img-second-section,
   .right-img-second-section {
     position: static;
+  }
+
+  footer {
+    height: fit-content;
+  }
+
+  .footer-content {
+    flex-direction: column-reverse;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links a {
+    width: 361px;
+  }
+
+  .footer-links-left,
+  .footer-links-right {
+    justify-content: space-around;
   }
 }

@@ -17,12 +17,12 @@ function Accueil() {
       <section className="secondary-bg-color main-section">
         <Navbar bg_color="primary" />
         <div className="main-section-content">
-          <div
-            onClick={() => scrollTo(enSavoirPlusRef)}
-            className="main-section-h1-btn "
-          >
+          <div className="main-section-h1-btn ">
             <h1>L'école du chat de l'Aube</h1>
-            <button className="primary-bg-color tertiary-color pointer-on-hover">
+            <button
+              className="primary-bg-color tertiary-color pointer-on-hover"
+              onClick={() => scrollTo(enSavoirPlusRef)}
+            >
               En savoir plus
             </button>
           </div>

@@ -855,8 +855,9 @@ h3 {
     height: fit-content;
   }
 
-  #mobile-long-h2 {
-    font-size: 40px;
+  #mobile-long-h2,
+  .volontaire-devenir-volontaire-text .volontaire-devenir-volontaire-h2 {
+    font-size: 38px;
   }
 
   #mobile-long-h1 {

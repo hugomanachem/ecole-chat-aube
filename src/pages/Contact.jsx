@@ -13,7 +13,7 @@ function Contact() {
     <>
       <section id="contact-section" className="primary-bg-color">
         <Navbar bg_color="secondary" />
-        <h1 id="contact-main-title">Contactez-nous ici !</h1>
+        <h1 id="contact-main-title">Contactez-nous ici!</h1>
         <div id="contact-grid-container">
           <a className="tertiary-color">
             <img className="footer-links-logo" src={facebook_logo_yellow} />
@@ -43,7 +43,7 @@ function Contact() {
           ></iframe>
 
           <form id="contact-form">
-            <h4 id="no-text-transform">Ou remplissez ce formulaire :</h4>
+            <h4 id="no-text-transform">Ou remplissez ce formulaire:</h4>
             <div>
               <label>Votre prénom</label>
               <input

@@ -644,8 +644,10 @@ h3 {
 }
 
 @media screen and (max-width: 1287px) {
-  .main-section-h1-btn h1 {
+  .main-section-h1-btn h1,
+  #contact-main-title {
     font-size: 80px;
+    line-height: 130px;
   }
 
   .text-second-section h2,
@@ -654,12 +656,18 @@ h3 {
     font-size: 51.2px;
   }
 
+  #no-text-transform {
+    font-size: 25.6px;
+  }
+
   .text-second-section p,
   .text-second-section li,
   .footer-links a,
   #don-video-body p,
   .main-section-text p,
-  .main-section-text label {
+  .main-section-text label,
+  #contact-grid-container a,
+  #contact-form label {
     font-size: 14.4px;
   }
 
@@ -692,6 +700,10 @@ h3 {
   #chat-detailed-infos {
     width: 55%;
     padding-top: 60px;
+  }
+
+  #contact-grid-container {
+    grid-template-columns: 50% 50%;
   }
 }
 
@@ -872,6 +884,33 @@ h3 {
 
   #chat-detailed-infos {
     padding-top: 10px;
+    width: 100%;
+  }
+
+  #contact-main-title {
+    font-size: 50px;
+    line-height: 130px;
+  }
+
+  #contact-grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #no-text-transform {
+    margin-bottom: 25px;
+  }
+
+  #contact-form button {
+    margin-top: 25px;
+  }
+
+  #contact-grid-container a {
+    width: 380px;
+  }
+
+  #contact-grid-container iframe {
     width: 100%;
   }
 }

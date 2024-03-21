@@ -35,7 +35,7 @@ function FaireUnDon() {
       <section className="secondary-bg-color second-section">
         <div className="second-section-body lefted">
           <div className="text-second-section">
-            <h2>Pourquoi faire un don ?</h2>
+            <h2>Pourquoi faire un don?</h2>
 
             <p>
               Parce qu’en tant qu’association nous ne nous reposons que sûr les
@@ -66,7 +66,7 @@ function FaireUnDon() {
 
       <section id="don-video-section" className="primary-bg-color">
         <div id="don-video-body">
-          <h2>Comment faire un don ?</h2>
+          <h2>Comment faire un don?</h2>
           <p>
             On vous explique comment faire un don dans la vidéo juste en dessous
             :

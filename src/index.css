@@ -705,6 +705,12 @@ h3 {
   #contact-grid-container {
     grid-template-columns: 50% 50%;
   }
+
+  button {
+    font-size: 19.2px;
+    height: 50px;
+    padding: 0 35px;
+  }
 }
 
 @media screen and (max-width: 1060px) {
